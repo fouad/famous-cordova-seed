@@ -1,0 +1,36 @@
+{
+  "name": "famous-cordova-seed",
+  "version": "0.0.1",
+  "description": "seed for a webpacked version of famous",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm run build && serve www/ -p 8080",
+    "start-dev": "npm run watch",
+    "test": "npm run lint -s && npm run build",
+    "build": "./node_modules/webpack/bin/webpack.js --cordova",
+    "dist": "./node_modules/webpack/bin/webpack.js --cordova --env=PRODUCTION --minify",
+    "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js  --cordova",
+    "lint-eslint": "eslint src/",
+    "lint-jscs": "jscs src/",
+    "lint": "npm run lint-eslint && npm run lint-jscs"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.1.6",
+    "css-loader": "^0.9.1",
+    "eslint": "^0.14.1",
+    "jscs": "^1.7.3",
+    "optimist": "^0.6.1",
+    "script-loader": "^0.6.1",
+    "serve": "^1.4.0",
+    "style-loader": "^0.9.0",
+    "webpack": "^1.7.3",
+    "webpack-cordova-plugin": "^0.1.5",
+    "webpack-dev-server": "^1.8.0",
+    "webpack-reload-plugin": "^0.1.2"
+  },
+  "dependencies": {
+    "brfs": "^1.2.0",
+    "famous": "^0.3.5",
+    "famous-polyfills": "^0.3.0"
+  }
+}

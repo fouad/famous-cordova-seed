@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="us.famous.cordova" version="0.1.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>MobileApp</name>
+    <description>
+        Famo.us seed project w/ Cordova
+    </description>
+    <author email="cordova@famo.us" href="http://famo.us">
+        Famous Cordova
+    </author>
+    <content src="http://localhost:8080/index.html"/>
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+</widget>
